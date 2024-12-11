@@ -19,7 +19,7 @@ const SelectionButton: React.FC<SelectionButtonProps> = ({ onSelectionChange }) 
       {/* Quiz Button */}
       <button
         onClick={() => handleSelection("quiz")}
-        className={`flex items-center justify-center px-6 py-3 rounded-lg text-6xl font-bold transition-all ${
+        className={`flex items-center justify-center px-6 py-3 rounded-lg text-5xl font-bold transition-all ${
           selected === "quiz" ? "bg-orange-500 text-white" : "bg-gray-200 text-black"
         }`}
       >
@@ -29,7 +29,7 @@ const SelectionButton: React.FC<SelectionButtonProps> = ({ onSelectionChange }) 
       {/* Duel Button */}
       <button
         onClick={() => handleSelection("duel")}
-        className={`flex items-center justify-center px-6 py-3 rounded-lg text-6xl font-bold transition-all ${
+        className={`flex items-center justify-center px-6 py-3 rounded-lg text-5xl font-bold transition-all ${
           selected === "duel" ? "bg-orange-500 text-white" : "bg-gray-200 text-black"
         }`}
       >

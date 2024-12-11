@@ -7,10 +7,10 @@ const QuizCard: React.FC = () => {
       <div className="flex-1 p-4">
         <h2 className="text-black text-xl font-bold">Art de vivre</h2>
         <div className="flex gap-2 mt-2">
-          <button className="px-4 py-1 bg-orange-500 text-white rounded-full text-sm">
+          <button className="px-4 py-1 bg-orange-500 text-white rounded-full text-xs">
             facile
           </button>
-          <button className="px-4 py-1 bg-orange-500 text-white rounded-full text-sm">
+          <button className="px-4 py-1 bg-orange-500 text-white rounded-full text-xs">
             10 questions
           </button>
         </div>
