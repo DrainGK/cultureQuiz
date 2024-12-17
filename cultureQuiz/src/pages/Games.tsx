@@ -1,19 +1,37 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Navbar from '../components/Navbar';
 import SelectionButton from '../components/selectionButton';
 import DraggableCarousel from '../components/DraggableCarousel';
 import QuizCard from '../components/QuizCard';
 import Categories from '../components/Categories';
 
-interface Props {};
+interface Quiz{
+  titre: string;
+  categorie: string;
+  difficulty: string;
+  ELO: number;
+  questions: Question[];
+};
 
-const Games: React.FC<Props> = () => {
+interface Question {
+  question: string;
+  responses: { text: string; correct: boolean}[];
+  note_historique: string;
+}
+
+interface DuelData {
+  id: number;
+  name: string;
+  elements: string[];
+}
+
+const Games: React.FC = () => {
     const [currentSelection, setCurrentSelection] = useState<"quiz" | "duel">("quiz");
     const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
 
   const handleSelectionChange = (selection: "quiz" | "duel") => {
     setCurrentSelection(selection);
-    console.log(`${currentSelection === "quiz" ? "Ready for a Quiz? 🧠" : "Ready for a Duel? ⚔️"}`)
+    console.log(selection === "quiz" ? "Ready for a Quiz? 🧠" : "Ready for a Duel? ⚔️");  
   };
 
   const categories = ["Art de vivre", "Histoire", "Sport", "Science", "Litterature"];

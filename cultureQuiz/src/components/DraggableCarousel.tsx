@@ -38,11 +38,13 @@ const DraggableCarousel: React.FC = () => {
         if (!isDragging) return;
 
         e.preventDefault();
-        const x = e.pageX - (carouselRef.current?.offsetLeft || 0);
-        const walk = x - startX;
-        if (carouselRef.current){
-            carouselRef.current.scrollLeft = scrollLeft - walk;
-        }
+        window.requestAnimationFrame(()=>{
+            const x = e.pageX - (carouselRef.current?.offsetLeft || 0);
+            const walk = x - startX;
+            if (carouselRef.current){
+                carouselRef.current.scrollLeft = scrollLeft - walk;
+            }
+        })
     };
 
     const handleMouseUp = () => {
@@ -61,6 +63,8 @@ const DraggableCarousel: React.FC = () => {
                 className="flex gap-4 overflow-x-scroll scrollbar-hide scroll-smooth "
                 onMouseDown={handleMouseDown}
                 onMouseMove={handleMouseMove}
+                aria-label="Carrousel déplaçable"
+                role="region"
             >
                 {cardsData.map((card, index) => (     
                 <TrendCard

@@ -1,0 +1,358 @@
+{
+  "quizzes": [
+    {
+      "titre": "Les Rois de France",
+      "categorie": "Histoire",
+      "ELO": 1500,
+      "questions":[
+        {
+          "question": "Quel roi de France, couronné en 987, est considéré comme le fondateur de la dynastie capétienne ?",
+          "difficulte": "Facile",
+          "reponses": [
+            {
+              "text": "Hugues Capet",
+              "correct": true
+            },
+            {
+              "text": "Philippe Auguste",
+              "correct": false
+            },
+            {
+              "text": "Charlemagne",
+              "correct": false
+            },
+            {
+              "text": "Louis IX",
+              "correct": false
+            }
+          ],
+          "note_historique": "Hugues Capet, en accédant au trône en 987, inaugure une nouvelle lignée de monarques qui gouvernera la France pendant plus de huit siècles."
+        },
+        {
+          "question": "Quel roi de France, surnommé « le Roi-Soleil », a régné de 1643 à 1715 ?",
+          "difficulte": "Facile",
+          "reponses": [
+            {
+              "text": "Louis XIV",
+              "correct": true
+            },
+            {
+              "text": "François Ier",
+              "correct": false
+            },
+            {
+              "text": "Henri IV",
+              "correct": false
+            },
+            {
+              "text": "Charles V",
+              "correct": false
+            }
+          ],
+          "note_historique": "Louis XIV a centralisé le pouvoir, construit Versailles et soutenu les arts, assurant le rayonnement culturel de la France."
+        },
+        {
+          "question": "Quel roi de France, connu pour avoir signé l’Édit de Nantes en 1598, mit fin aux guerres de religion ?",
+          "difficulte": "Facile",
+          "reponses": [
+            {
+              "text": "Henri IV",
+              "correct": true
+            },
+            {
+              "text": "Louis XIII",
+              "correct": false
+            },
+            {
+              "text": "Charles IX",
+              "correct": false
+            },
+            {
+              "text": "François II",
+              "correct": false
+            }
+          ],
+          "note_historique": "Henri IV accorda une relative tolérance aux protestants, apaisant ainsi les tensions religieuses internes."
+        },
+        {
+          "question": "Quel roi médiéval, canonisé en 1297, est souvent vu comme l’incarnation du roi chrétien idéal ?",
+          "difficulte": "Moyen",
+          "reponses": [
+            {
+              "text": "Louis IX (Saint Louis)",
+              "correct": true
+            },
+            {
+              "text": "Philippe le Bel",
+              "correct": false
+            },
+            {
+              "text": "Louis VII",
+              "correct": false
+            },
+            {
+              "text": "Robert II le Pieux",
+              "correct": false
+            }
+          ],
+          "note_historique": "Louis IX mena des croisades, réforma la justice et construisit des édifices religieux, symbolisant le roi pieux et juste."
+        },
+        {
+          "question": "Quel roi de France fut exécuté en 1793, marquant la fin de la monarchie absolue ?",
+          "difficulte": "Moyen",
+          "reponses": [
+            {
+              "text": "Louis XVI",
+              "correct": true
+            },
+            {
+              "text": "Louis XV",
+              "correct": false
+            },
+            {
+              "text": "Charles X",
+              "correct": false
+            },
+            {
+              "text": "Louis XVIII",
+              "correct": false
+            }
+          ],
+          "note_historique": "Louis XVI fut renversé par la Révolution, symbolisant la fin de l’Ancien Régime et l’entrée dans une nouvelle ère politique."
+        },
+        {
+          "question": "Quel roi a rétabli la monarchie après la chute de Napoléon, avec une charte constitutionnelle limitant ses pouvoirs ?",
+          "difficulte": "Moyen",
+          "reponses": [
+            {
+              "text": "Louis XVIII",
+              "correct": true
+            },
+            {
+              "text": "Charles X",
+              "correct": false
+            },
+            {
+              "text": "Louis-Philippe Ier",
+              "correct": false
+            },
+            {
+              "text": "Louis XVII",
+              "correct": false
+            }
+          ],
+          "note_historique": "Louis XVIII tenta de concilier l’héritage révolutionnaire et la tradition monarchique, donnant naissance à la Restauration."
+        },
+        {
+          "question": "Quel roi fit bâtir la Sainte-Chapelle à Paris au XIIIe siècle pour abriter les reliques de la Passion ?",
+          "difficulte": "Moyen",
+          "reponses": [
+            {
+              "text": "Louis IX (Saint Louis)",
+              "correct": true
+            },
+            {
+              "text": "Philippe Auguste",
+              "correct": false
+            },
+            {
+              "text": "Louis VIII",
+              "correct": false
+            },
+            {
+              "text": "Louis VI",
+              "correct": false
+            }
+          ],
+          "note_historique": "La Sainte-Chapelle reflète le prestige du royaume capétien et la dévotion du roi."
+        },
+        {
+          "question": "Quel roi, soutenu par Jeanne d’Arc, parvint à restaurer l’autorité royale pendant la Guerre de Cent Ans ?",
+          "difficulte": "Difficile",
+          "reponses": [
+            {
+              "text": "Charles VII",
+              "correct": true
+            },
+            {
+              "text": "Jean II le Bon",
+              "correct": false
+            },
+            {
+              "text": "Charles VI",
+              "correct": false
+            },
+            {
+              "text": "Philippe VI",
+              "correct": false
+            }
+          ],
+          "note_historique": "Charles VII reconquit le territoire face aux Anglais, consolidant le pouvoir royal et mettant fin à une longue période de troubles."
+        },
+        {
+          "question": "Quel jeune roi, fils de Henri II et de Catherine de Médicis, mourut à 16 ans, laissant un royaume instable ?",
+          "difficulte": "Difficile",
+          "reponses": [
+            {
+              "text": "François II",
+              "correct": true
+            },
+            {
+              "text": "Charles IX",
+              "correct": false
+            },
+            {
+              "text": "Henri III",
+              "correct": false
+            },
+            {
+              "text": "François Ier",
+              "correct": false
+            }
+          ],
+          "note_historique": "La mort prématurée de François II (1559-1560) laissa la France en proie aux guerres de religion."
+        },
+        {
+          "question": "Quel roi, succédant à Louis XIV, ne parvint pas à réformer en profondeur les finances et l’administration avant la Révolution ?",
+          "difficulte": "Difficile",
+          "reponses": [
+            {
+              "text": "Louis XV",
+              "correct": true
+            },
+            {
+              "text": "Louis XIII",
+              "correct": false
+            },
+            {
+              "text": "Henri III",
+              "correct": false
+            },
+            {
+              "text": "Louis-Philippe Ier",
+              "correct": false
+            }
+          ],
+          "note_historique": "Louis XV, malgré un long règne, ne put résoudre les problèmes financiers, préparant involontairement l’effondrement de la monarchie."
+        }
+      ]
+    },
+    {
+      "titre": "Les Héros de la Littérature Française",
+      "categorie": "Littérature",
+      "ELO": 1500,
+      "questions": [
+        {
+          "question": "Quel héros, ancien forçat, incarne la rédemption et la bonté dans 'Les Misérables' de Victor Hugo ?",
+          "difficulty": "Facile",
+          "reponses": [
+            { "text": "Jean Valjean", "correct": true },
+            { "text": "Javert", "correct": false },
+            { "text": "Marius Pontmercy", "correct": false },
+            { "text": "Gavroche", "correct": false }
+          ],
+          "note_historique": "Jean Valjean, autrefois condamné pour avoir volé du pain, symbolise la transformation morale et la compassion au cœur de la société du XIXe siècle."
+        },
+        {
+          "question": "Quel jeune Gascon, héros d’Alexandre Dumas, poursuit la gloire et l’honneur aux côtés d’Athos, Porthos et Aramis ?",
+          "difficulty": "Facile",
+          "reponses": [
+            { "text": "d’Artagnan", "correct": true },
+            { "text": "Cyrano de Bergerac", "correct": false },
+            { "text": "Edmond Dantès", "correct": false },
+            { "text": "Candide", "correct": false }
+          ],
+          "note_historique": "Dans 'Les Trois Mousquetaires' (1844), d’Artagnan incarne l’audace, le courage et le sens de l’honneur, qualités typiques du héros de cape et d’épée."
+        },
+        {
+          "question": "Quel personnage, célèbre pour son nez et sa verve, est le héros de la pièce 'Cyrano de Bergerac' (1897) d’Edmond Rostand ?",
+          "difficulty": "Moyen",
+          "reponses": [
+            { "text": "Cyrano de Bergerac", "correct": true },
+            { "text": "Rodrigue (Le Cid)", "correct": false },
+            { "text": "Jean Valjean", "correct": false },
+            { "text": "Figaro", "correct": false }
+          ],
+          "note_historique": "Cyrano, poète bretteur, est un héros romantique, prêt au sacrifice, préférant l’honneur et la beauté des mots à la satisfaction de son amour."
+        },
+        {
+          "question": "Quel héros créé par Voltaire parcourt le monde dans l’espoir de comprendre si nous vivons dans 'le meilleur des mondes possibles' ?",
+          "difficulty": "Moyen",
+          "reponses": [
+            { "text": "Candide", "correct": true },
+            { "text": "Gulliver", "correct": false },
+            { "text": "Pantagruel", "correct": false },
+            { "text": "Bel-Ami", "correct": false }
+          ],
+          "note_historique": "'Candide' (1759) est un conte philosophique critiquant l'optimisme aveugle, et Candide incarne l’innocence confrontée à la dureté du réel."
+        },
+        {
+          "question": "Dans 'Le Comte de Monte-Cristo' d’Alexandre Dumas, quel héros injustement emprisonné orchestre une vengeance méthodique contre ses ennemis ?",
+          "difficulty": "Difficile",
+          "reponses": [
+            { "text": "Edmond Dantès", "correct": true },
+            { "text": "Arsène Lupin", "correct": false },
+            { "text": "d’Artagnan", "correct": false },
+            { "text": "Félix de Vandenesse", "correct": false }
+          ],
+          "note_historique": "Edmond Dantès symbolise la résilience et la soif de justice, dans une fresque qui interroge la morale, la culpabilité et le pardon."
+        },
+        {
+          "question": "Quel personnage de Stendhal, partagé entre ambition sociale et passion amoureuse, incarne un héros complexe dans 'Le Rouge et le Noir' ?",
+          "difficulty": "Difficile",
+          "reponses": [
+            { "text": "Julien Sorel", "correct": true },
+            { "text": "Lucien de Rubempré", "correct": false },
+            { "text": "Fabrice del Dongo", "correct": false },
+            { "text": "Frédéric Moreau", "correct": false }
+          ],
+          "note_historique": "Julien Sorel reflète les tensions entre le désir de réussite individuelle et les contraintes morales et sociales de la Restauration."
+        },
+        {
+          "question": "Quel géant humaniste, héros des récits de François Rabelais, illustre un idéal de savoir, de liberté et de gourmandise ?",
+          "difficulty": "Difficile",
+          "reponses": [
+            { "text": "Pantagruel", "correct": true },
+            { "text": "Gargantua", "correct": false },
+            { "text": "Grandgousier", "correct": false },
+            { "text": "Panurge", "correct": false }
+          ],
+          "note_historique": "Dans 'Gargantua' et 'Pantagruel' (XVIe siècle), Rabelais propose un héros géant célébrant le savoir, la fête et la critique des dogmes."
+        },
+        {
+          "question": "Quel héros, difforme mais profondément touchant, sonneur de cloches de Notre-Dame de Paris, représente un idéal tragique et solitaire ?",
+          "difficulty": "Très Difficile",
+          "reponses": [
+            { "text": "Quasimodo", "correct": true },
+            { "text": "Phébus", "correct": false },
+            { "text": "Gringoire", "correct": false },
+            { "text": "Mauprat", "correct": false }
+          ],
+          "note_historique": "Quasimodo, dans le roman de Victor Hugo (1831), est un anti-héros difforme qui incarne la sensibilité cachée sous l’apparence monstrueuse."
+        },
+        {
+          "question": "Quel petit héros, créé par Antoine de Saint-Exupéry, voyage de planète en planète pour saisir la nature humaine et l’amitié ?",
+          "difficulty": "Très Difficile",
+          "reponses": [
+            { "text": "Le Petit Prince", "correct": true },
+            { "text": "Micromégas", "correct": false },
+            { "text": "Le Grand Meaulnes", "correct": false },
+            { "text": "Poil de Carotte", "correct": false }
+          ],
+          "note_historique": "Le Petit Prince (1943) est un héros symbolique, porte-parole d’une philosophie universelle sur l’amour, l’enfance et la responsabilité."
+        },
+        {
+          "question": "Dans la littérature médiévale française, quel chevalier de la Table Ronde, chanté par Chrétien de Troyes, incarne l’idéal chevaleresque ?",
+          "difficulty": "Très Difficile",
+          "reponses": [
+            { "text": "Lancelot du Lac", "correct": true },
+            { "text": "Perceval", "correct": false },
+            { "text": "Gauvain", "correct": false },
+            { "text": "Tristan", "correct": false }
+          ],
+          "note_historique": "Lancelot, héros courtois et valeureux, symbolise l’amour impossible, la loyauté et la quête de perfection spirituelle au cœur de la matière de Bretagne."
+        }
+      ]
+    }
+  ]
+}
