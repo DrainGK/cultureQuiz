@@ -3,11 +3,13 @@
     {
       "titre": "Les Rois de France",
       "categorie": "Histoire",
+      "img":"https://lecourrierdesstrateges.fr/wp-content/uploads/2024/07/Signol-Emile-001.jpg",
+      "difficulty":"Facile",
       "ELO": 1500,
       "questions":[
         {
           "question": "Quel roi de France, couronné en 987, est considéré comme le fondateur de la dynastie capétienne ?",
-          "difficulte": "Facile",
+          "difficulty": "Facile",
           "reponses": [
             {
               "text": "Hugues Capet",
@@ -30,7 +32,7 @@
         },
         {
           "question": "Quel roi de France, surnommé « le Roi-Soleil », a régné de 1643 à 1715 ?",
-          "difficulte": "Facile",
+          "difficulty": "Facile",
           "reponses": [
             {
               "text": "Louis XIV",
@@ -53,7 +55,7 @@
         },
         {
           "question": "Quel roi de France, connu pour avoir signé l’Édit de Nantes en 1598, mit fin aux guerres de religion ?",
-          "difficulte": "Facile",
+          "difficulty": "Facile",
           "reponses": [
             {
               "text": "Henri IV",
@@ -76,7 +78,7 @@
         },
         {
           "question": "Quel roi médiéval, canonisé en 1297, est souvent vu comme l’incarnation du roi chrétien idéal ?",
-          "difficulte": "Moyen",
+          "difficulty": "Moyen",
           "reponses": [
             {
               "text": "Louis IX (Saint Louis)",
@@ -99,7 +101,7 @@
         },
         {
           "question": "Quel roi de France fut exécuté en 1793, marquant la fin de la monarchie absolue ?",
-          "difficulte": "Moyen",
+          "difficulty": "Moyen",
           "reponses": [
             {
               "text": "Louis XVI",
@@ -122,7 +124,7 @@
         },
         {
           "question": "Quel roi a rétabli la monarchie après la chute de Napoléon, avec une charte constitutionnelle limitant ses pouvoirs ?",
-          "difficulte": "Moyen",
+          "difficulty": "Moyen",
           "reponses": [
             {
               "text": "Louis XVIII",
@@ -145,7 +147,7 @@
         },
         {
           "question": "Quel roi fit bâtir la Sainte-Chapelle à Paris au XIIIe siècle pour abriter les reliques de la Passion ?",
-          "difficulte": "Moyen",
+          "difficulty": "Moyen",
           "reponses": [
             {
               "text": "Louis IX (Saint Louis)",
@@ -168,7 +170,7 @@
         },
         {
           "question": "Quel roi, soutenu par Jeanne d’Arc, parvint à restaurer l’autorité royale pendant la Guerre de Cent Ans ?",
-          "difficulte": "Difficile",
+          "difficulty": "Difficile",
           "reponses": [
             {
               "text": "Charles VII",
@@ -191,7 +193,7 @@
         },
         {
           "question": "Quel jeune roi, fils de Henri II et de Catherine de Médicis, mourut à 16 ans, laissant un royaume instable ?",
-          "difficulte": "Difficile",
+          "difficulty": "Difficile",
           "reponses": [
             {
               "text": "François II",
@@ -214,7 +216,7 @@
         },
         {
           "question": "Quel roi, succédant à Louis XIV, ne parvint pas à réformer en profondeur les finances et l’administration avant la Révolution ?",
-          "difficulte": "Difficile",
+          "difficulty": "Difficile",
           "reponses": [
             {
               "text": "Louis XV",
@@ -240,6 +242,8 @@
     {
       "titre": "Les Héros de la Littérature Française",
       "categorie": "Littérature",
+      "difficulty": "Facile",
+      "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5kHjwaSkV_YlSokiDFxfuA8OqXxNARqhDaA&s",
       "ELO": 1500,
       "questions": [
         {
