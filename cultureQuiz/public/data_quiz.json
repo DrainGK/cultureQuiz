@@ -2,6 +2,7 @@
   "quizzes": [
     {
       "titre": "Les Rois de France",
+      "id": 1,
       "categorie": "Histoire",
       "img":"https://lecourrierdesstrateges.fr/wp-content/uploads/2024/07/Signol-Emile-001.jpg",
       "difficulty":"Facile",
@@ -241,6 +242,7 @@
     },
     {
       "titre": "Les Héros de la Littérature Française",
+      "id": 2,
       "categorie": "Littérature",
       "difficulty": "Facile",
       "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5kHjwaSkV_YlSokiDFxfuA8OqXxNARqhDaA&s",

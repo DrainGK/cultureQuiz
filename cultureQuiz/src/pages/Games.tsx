@@ -5,27 +5,8 @@ import DraggableCarousel from '../components/DraggableCarousel';
 import QuizCard from '../components/QuizCard';
 import Categories from '../components/Categories';
 import QuizQuestions from '../components/QuizQuestions';
-
-interface Quiz{
-  titre: string;
-  categorie: string;
-  difficulty: string;
-  img: string;
-  ELO: number;
-  questions: Question[];
-};
-
-interface Question {
-  question: string;
-  responses: { text: string; correct: boolean}[];
-  note_historique: string;
-}
-
-interface DuelData {
-  id: number;
-  name: string;
-  elements: string[];
-}
+import { Quiz, Question, DuelData } from '../utils/types';
+import { Link } from 'react-router-dom';
 
 const Games: React.FC = () => {
     const [currentSelection, setCurrentSelection] = useState<"quiz" | "duel">("quiz");
@@ -106,14 +87,15 @@ const Games: React.FC = () => {
             <h2 className="text-black font-raleway font-bold text-2xl my-7">Les quiz ❓</h2>
             {quizzes
               .filter((quiz) => !selectedCategory || quiz.categorie === selectedCategory) // Filtrer par catégorie
-              .map((quiz, index) => (
-                <div key={index} onClick={() => handleQuizClick(quiz)}>
+              .map((quiz) => (
+                <div key={quiz.id} onClick={() => handleQuizClick(quiz)}>
                   <QuizCard
                     title ={quiz.titre}
                     category={quiz.categorie}
                     difficulty={quiz.difficulty}
                     img={quiz.img}
                     questionsCount={quiz.questions.length}
+                    to={`/quiz/${quiz.id}`}
                   />
                 </div>
               ))}
