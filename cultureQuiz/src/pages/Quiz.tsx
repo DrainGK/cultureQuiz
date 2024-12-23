@@ -4,11 +4,21 @@ import { Quiz as QuizType } from "../utils/types";
 import QuizQuestions from "../components/QuizQuestions";
 
 const Quiz: React.FC = () => {
-  const { id } = useParams<{ id: string }>(); // Récupération de l'ID dans l'URL
+  const { slugAndId } = useParams<{ slugAndId: string }>(); // Récupération de l'ID dans l'URL
   const navigate = useNavigate();
   const [quiz, setQuiz] = useState<QuizType | null>(null);
   const [isLoading, setIsLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
+
+  let quizId = null;
+  let slug = "";
+
+  if (slugAndId) {
+    const parts = slugAndId.split("-");
+    quizId = parts[parts.length - 1]; // dernier élément (e.g. "42")
+    // on peut reconstruire le slug complet sans l'ID si on veut
+    slug = parts.slice(0, parts.length - 1).join("-");
+  }
 
   useEffect(() => {
     const fetchQuiz = async () => {
@@ -20,7 +30,7 @@ const Quiz: React.FC = () => {
 
         const data = await response.json();
         const foundQuiz = data.quizzes.find(
-          (quiz: QuizType) => quiz.id === parseInt(id ?? "", 10)
+          (quiz: QuizType) => quiz.id === parseInt(quizId ?? "", 10)
         );
 
         if (!foundQuiz) {
@@ -36,7 +46,7 @@ const Quiz: React.FC = () => {
     };
 
     fetchQuiz();
-  }, [id]);
+  }, [quizId]);
 
   if (isLoading) {
     return <p>Chargement en cours...</p>;

@@ -4,9 +4,8 @@ import SelectionButton from '../components/selectionButton';
 import DraggableCarousel from '../components/DraggableCarousel';
 import QuizCard from '../components/QuizCard';
 import Categories from '../components/Categories';
-import QuizQuestions from '../components/QuizQuestions';
-import { Quiz, Question, DuelData } from '../utils/types';
-import { Link } from 'react-router-dom';
+import { Quiz, DuelData } from '../utils/types';
+import { slugify } from '../utils/utils';
 
 const Games: React.FC = () => {
     const [currentSelection, setCurrentSelection] = useState<"quiz" | "duel">("quiz");
@@ -15,6 +14,7 @@ const Games: React.FC = () => {
     const [selectedQuiz, setSelectedQuiz] = useState<Quiz | null>(null);
     const [isLoading, setIsLoading] = useState<boolean>(true);
     const [error, setError] = useState<string | null>(null);
+    
 
   const handleSelectionChange = (selection: "quiz" | "duel") => {
     setCurrentSelection(selection);
@@ -95,13 +95,13 @@ const Games: React.FC = () => {
                     difficulty={quiz.difficulty}
                     img={quiz.img}
                     questionsCount={quiz.questions.length}
-                    to={`/quiz/${quiz.id}`}
+                    to={`/quiz/${slugify(quiz.titre)}-${quiz.id}`}
                   />
                 </div>
               ))}
           </>
         ) : (
-          <QuizQuestions quiz={selectedQuiz} onBack={() => setSelectedQuiz(null)} />
+          <></>
         )}
       </div>
     </div>

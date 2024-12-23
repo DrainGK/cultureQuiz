@@ -25,3 +25,13 @@ export interface DuelData {
     name: string;
     elements: string[];
   }
+
+export interface QuizCardProps {
+    title: string; // Titre du quiz
+    category: string;
+    difficulty: string; // Difficulté du quiz
+    questionsCount: number; // Nombre de questions
+    img: string; // URL de l'image associée
+    to: string;
+  }
+  

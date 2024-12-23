@@ -1,14 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
-interface QuizCardProps {
-  title: string; // Titre du quiz
-  category: string;
-  difficulty: string; // Difficulté du quiz
-  questionsCount: number; // Nombre de questions
-  img: string; // URL de l'image associée
-  to: string;
-}
+import { QuizCardProps } from "../utils/types";
 
 const QuizCard: React.FC<QuizCardProps> = ({ title, category, difficulty, questionsCount, img, to }) => {
   return (
