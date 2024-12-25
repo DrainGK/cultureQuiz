@@ -71,7 +71,7 @@ const Games: React.FC = () => {
         <SelectionButton onSelectionChange={handleSelectionChange} />
       </div>
       <DraggableCarousel />
-      <div className="w-full px-5 mb-5">
+      <div className="w-full px-1 md:px-5 mb-5">
         {/* Catégories */}
         <div className="flex gap-2 mt-7">
           {categories.map((category) => (
@@ -81,9 +81,7 @@ const Games: React.FC = () => {
           ))}
         </div>
 
-        {/* Liste des quiz */}
-        {!selectedQuiz ? (
-          <>
+          <div className='overflow-y-auto'>
             <h2 className="text-black font-raleway font-bold text-2xl my-7">Les quiz ❓</h2>
             {quizzes
               .filter((quiz) => !selectedCategory || quiz.categorie === selectedCategory) // Filtrer par catégorie
@@ -99,10 +97,7 @@ const Games: React.FC = () => {
                   />
                 </div>
               ))}
-          </>
-        ) : (
-          <></>
-        )}
+          </div>
       </div>
     </div>
   )

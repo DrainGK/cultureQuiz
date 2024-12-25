@@ -7,7 +7,7 @@ function App() {
 
   
   return (
-    <div className='App w-full'>
+    <div className='App flex flex-col '>
       <Routes>
         <Route path="/" element={<Games />}/>
         <Route path="/quiz/:slugAndId" element={<Quiz/>}/>

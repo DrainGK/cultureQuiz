@@ -359,6 +359,606 @@
           "note_historique": "Lancelot, héros courtois et valeureux, symbolise l’amour impossible, la loyauté et la quête de perfection spirituelle au cœur de la matière de Bretagne."
         }
       ]
+    },
+    {
+      "titre": "Le Sport en France",
+      "id": 987654321,
+      "categorie": "Sport",
+      "img": "https://img.olympics.com/images/image/private/t_s_pog_staticContent_hero_lg_2x/f_auto/primary/pboasbzfl0ej7skf74a0",
+      "difficulty": "Moyen",
+      "ELO": 1500,
+      "questions": [
+        {
+          "question": "Quel basketteur français, quadruple champion NBA avec les San Antonio Spurs, a été nommé MVP des Finales en 2007 ?",
+          "difficulty": "Facile",
+          "reponses": [
+            {
+              "text": "Tony Parker",
+              "correct": true
+            },
+            {
+              "text": "Nicolas Batum",
+              "correct": false
+            },
+            {
+              "text": "Boris Diaw",
+              "correct": false
+            },
+            {
+              "text": "Evan Fournier",
+              "correct": false
+            }
+          ],
+          "note_historique": "Tony Parker (né en 1982) a marqué l’histoire du basket français et international, devenant le premier Français sacré MVP des Finales NBA."
+        },
+        {
+          "question": "Quelle nageuse française a remporté le 400 m nage libre aux Jeux olympiques d’Athènes en 2004 ?",
+          "difficulty": "Facile",
+          "reponses": [
+            {
+              "text": "Laure Manaudou",
+              "correct": true
+            },
+            {
+              "text": "Camille Muffat",
+              "correct": false
+            },
+            {
+              "text": "Charlotte Bonnet",
+              "correct": false
+            },
+            {
+              "text": "Frédérique Jossinet",
+              "correct": false
+            }
+          ],
+          "note_historique": "Laure Manaudou est la première nageuse française à avoir obtenu un titre olympique, ouvrant une nouvelle ère pour la natation tricolore."
+        },
+        {
+          "question": "Quel biathlète français, quintuple champion olympique, est l’un des plus grands champions de l’histoire de ce sport ?",
+          "difficulty": "Facile",
+          "reponses": [
+            {
+              "text": "Martin Fourcade",
+              "correct": true
+            },
+            {
+              "text": "Raphaël Poirée",
+              "correct": false
+            },
+            {
+              "text": "Quentin Fillon Maillet",
+              "correct": false
+            },
+            {
+              "text": "Simon Fourcade",
+              "correct": false
+            }
+          ],
+          "note_historique": "Martin Fourcade a dominé le biathlon mondial pendant près d’une décennie, remportant 13 fois le globe de cristal de la Coupe du monde."
+        },
+        {
+          "question": "Quel tennisman français, vainqueur de Roland-Garros en 1983, est le dernier Français à avoir remporté ce tournoi en simple messieurs ?",
+          "difficulty": "Moyen",
+          "reponses": [
+            {
+              "text": "Yannick Noah",
+              "correct": true
+            },
+            {
+              "text": "Henri Leconte",
+              "correct": false
+            },
+            {
+              "text": "Guy Forget",
+              "correct": false
+            },
+            {
+              "text": "Jo-Wilfried Tsonga",
+              "correct": false
+            }
+          ],
+          "note_historique": "Yannick Noah reste à ce jour le dernier Français à avoir soulevé la Coupe des Mousquetaires, en s’imposant face à Mats Wilander."
+        },
+        {
+          "question": "Quel perchiste français a battu le record du monde en salle avec un saut à 6,16 m en 2014 ?",
+          "difficulty": "Moyen",
+          "reponses": [
+            {
+              "text": "Renaud Lavillenie",
+              "correct": true
+            },
+            {
+              "text": "Jean Galfione",
+              "correct": false
+            },
+            {
+              "text": "Armand Duplantis",
+              "correct": false
+            },
+            {
+              "text": "Thierry Vigneron",
+              "correct": false
+            }
+          ],
+          "note_historique": "En franchissant 6,16 m à Donetsk, Renaud Lavillenie a battu le record légendaire détenu depuis plus de 20 ans par Sergueï Bubka."
+        },
+        {
+          "question": "Quel judoka français, titré dix fois champion du monde, est considéré comme l’un des plus grands judokas de tous les temps ?",
+          "difficulty": "Moyen",
+          "reponses": [
+            {
+              "text": "Teddy Riner",
+              "correct": true
+            },
+            {
+              "text": "David Douillet",
+              "correct": false
+            },
+            {
+              "text": "Clarisse Agbegnenou",
+              "correct": false
+            },
+            {
+              "text": "Ugo Legrand",
+              "correct": false
+            }
+          ],
+          "note_historique": "Teddy Riner a empilé les médailles mondiales et olympiques, devenant l’une des plus grandes légendes du judo international."
+        },
+        {
+          "question": "Quel pilote français, sacré neuf fois champion du monde des rallyes WRC, détient un record inégalé dans l’histoire du sport automobile ?",
+          "difficulty": "Difficile",
+          "reponses": [
+            {
+              "text": "Sébastien Loeb",
+              "correct": true
+            },
+            {
+              "text": "Sébastien Ogier",
+              "correct": false
+            },
+            {
+              "text": "Didier Auriol",
+              "correct": false
+            },
+            {
+              "text": "Alain Prost",
+              "correct": false
+            }
+          ],
+          "note_historique": "Sébastien Loeb et son copilote Daniel Elena ont largement dominé la discipline, remportant 9 titres d’affilée de 2004 à 2012."
+        },
+        {
+          "question": "Quel joueur de rugby, élu meilleur joueur du monde en 2021, est l’un des grands artisans du renouveau du XV de France ?",
+          "difficulty": "Difficile",
+          "reponses": [
+            {
+              "text": "Antoine Dupont",
+              "correct": true
+            },
+            {
+              "text": "Frédéric Michalak",
+              "correct": false
+            },
+            {
+              "text": "Sébastien Chabal",
+              "correct": false
+            },
+            {
+              "text": "Morgan Parra",
+              "correct": false
+            }
+          ],
+          "note_historique": "Surnommé « le minot » lorsqu’il évoluait à Castres, Antoine Dupont est devenu un leader en équipe de France et au Stade Toulousain."
+        },
+        {
+          "question": "Quel cycliste français, surnommé « Le Blaireau », a remporté cinq fois le Tour de France entre 1978 et 1985 ?",
+          "difficulty": "Difficile",
+          "reponses": [
+            {
+              "text": "Bernard Hinault",
+              "correct": true
+            },
+            {
+              "text": "Laurent Fignon",
+              "correct": false
+            },
+            {
+              "text": "Raymond Poulidor",
+              "correct": false
+            },
+            {
+              "text": "Jacques Anquetil",
+              "correct": false
+            }
+          ],
+          "note_historique": "Bernard Hinault est l’un des rares cyclistes à avoir gagné les trois Grands Tours (France, Italie, Espagne), marquant l’histoire du cyclisme français."
+        },
+        {
+          "question": "Quel handballeur français, triple champion olympique (2008, 2012, 2020) et quadruple champion du monde, est souvent considéré comme l’un des meilleurs joueurs de l’histoire ?",
+          "difficulty": "Très Difficile",
+          "reponses": [
+            {
+              "text": "Nikola Karabatic",
+              "correct": true
+            },
+            {
+              "text": "Luc Abalo",
+              "correct": false
+            },
+            {
+              "text": "Daniel Narcisse",
+              "correct": false
+            },
+            {
+              "text": "Guillaume Gille",
+              "correct": false
+            }
+          ],
+          "note_historique": "Nikola Karabatic a été un élément clé des « Experts » (surnom de l’équipe de France de handball) lors de leurs nombreux succès."
+        }
+      ]
+    },
+    {
+      "titre": "La France au Moyen Âge",
+      "id": 123456789,
+      "categorie": "Histoire",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/2/20/King_Hugh_Capet.jpg",
+      "difficulty": "Moyen",
+      "ELO": 1500,
+      "questions": [
+        {
+          "question": "Quel roi franc, couronné empereur d’Occident à Rome en l’an 800, a consolidé un vaste empire couvrant une grande partie de l’Europe ?",
+          "difficulty": "Facile",
+          "reponses": [
+            {
+              "text": "Charlemagne",
+              "correct": true
+            },
+            {
+              "text": "Clovis",
+              "correct": false
+            },
+            {
+              "text": "Pépin le Bref",
+              "correct": false
+            },
+            {
+              "text": "Carloman",
+              "correct": false
+            }
+          ],
+          "note_historique": "Charlemagne (768-814) unifie un immense territoire et relance les arts, l’éducation et la culture dans ce qu’on appellera la 'Renaissance carolingienne'."
+        },
+        {
+          "question": "Quel traité de 843 divise l’Empire carolingien entre les petits-fils de Charlemagne et pose les bases des futures nations européennes ?",
+          "difficulty": "Facile",
+          "reponses": [
+            {
+              "text": "Le traité de Verdun",
+              "correct": true
+            },
+            {
+              "text": "Le traité de Troyes",
+              "correct": false
+            },
+            {
+              "text": "Le traité de Paris",
+              "correct": false
+            },
+            {
+              "text": "Le traité de Cambrai",
+              "correct": false
+            }
+          ],
+          "note_historique": "Signé entre Lothaire, Louis le Germanique et Charles le Chauve, ce traité marque le début de la fragmentation de l’Empire carolingien."
+        },
+        {
+          "question": "Quel roi capétien, surnommé « le roi de fer », a mené une lutte féroce contre l’ordre du Temple et contraint la papauté à s’installer en Avignon ?",
+          "difficulty": "Moyen",
+          "reponses": [
+            {
+              "text": "Philippe IV le Bel",
+              "correct": true
+            },
+            {
+              "text": "Louis IX (Saint Louis)",
+              "correct": false
+            },
+            {
+              "text": "Philippe II Auguste",
+              "correct": false
+            },
+            {
+              "text": "Charles V le Sage",
+              "correct": false
+            }
+          ],
+          "note_historique": "Philippe IV le Bel (1285-1314) a fait détruire l’ordre du Temple et obtenu le transfert de la papauté à Avignon, entraînant la 'Captivité babylonienne' (1309-1377)."
+        },
+        {
+          "question": "Quel roi médiéval, couronné en 1226, est célèbre pour sa piété, ses réformes de la justice et la construction de la Sainte-Chapelle ?",
+          "difficulty": "Moyen",
+          "reponses": [
+            {
+              "text": "Louis IX (Saint Louis)",
+              "correct": true
+            },
+            {
+              "text": "Louis VIII",
+              "correct": false
+            },
+            {
+              "text": "Philippe Auguste",
+              "correct": false
+            },
+            {
+              "text": "Louis VII",
+              "correct": false
+            }
+          ],
+          "note_historique": "Saint Louis fut canonisé en 1297. Il mena aussi deux croisades (1248 et 1270) et incarna l’image du roi chrétien idéal."
+        },
+        {
+          "question": "Quelle bataille, en 1415, fut une lourde défaite pour la chevalerie française pendant la guerre de Cent Ans ?",
+          "difficulty": "Moyen",
+          "reponses": [
+            {
+              "text": "Azincourt",
+              "correct": true
+            },
+            {
+              "text": "Bouvines",
+              "correct": false
+            },
+            {
+              "text": "Hastings",
+              "correct": false
+            },
+            {
+              "text": "Poitiers",
+              "correct": false
+            }
+          ],
+          "note_historique": "La bataille d’Azincourt (25 octobre 1415) est l’un des plus grands désastres militaires pour la France, laissant la voie libre à l’avancée anglaise."
+        },
+        {
+          "question": "Quelle héroïne nationale, née à Domrémy vers 1412, a mené l’armée française à la levée du siège d’Orléans et permis le sacre de Charles VII à Reims ?",
+          "difficulty": "Moyen",
+          "reponses": [
+            {
+              "text": "Jeanne d’Arc",
+              "correct": true
+            },
+            {
+              "text": "Aliénor d’Aquitaine",
+              "correct": false
+            },
+            {
+              "text": "Isabelle de France",
+              "correct": false
+            },
+            {
+              "text": "Catherine de Médicis",
+              "correct": false
+            }
+          ],
+          "note_historique": "Surnommée 'la Pucelle', Jeanne d’Arc meurt sur le bûcher en 1431, mais son rôle militaire et symbolique a marqué la fin de la guerre de Cent Ans."
+        },
+        {
+          "question": "Quelle dynastie, inaugurée par Hugues Capet en 987, a gouverné la France jusqu’en 1328 ?",
+          "difficulty": "Difficile",
+          "reponses": [
+            {
+              "text": "Les Capétiens",
+              "correct": true
+            },
+            {
+              "text": "Les Valois",
+              "correct": false
+            },
+            {
+              "text": "Les Bourbons",
+              "correct": false
+            },
+            {
+              "text": "Les Mérovingiens",
+              "correct": false
+            }
+          ],
+          "note_historique": "La dynastie capétienne perdure sous ses branches cadettes (Valois, Bourbons), représentant la plus longue lignée royale de l’histoire de France."
+        },
+        {
+          "question": "Quelle grande duchesse, maîtresse d’une immense province, épousa successivement Louis VII de France puis Henri II Plantagenêt d’Angleterre, jouant un rôle central dans les conflits franco-anglais ?",
+          "difficulty": "Difficile",
+          "reponses": [
+            {
+              "text": "Aliénor d’Aquitaine",
+              "correct": true
+            },
+            {
+              "text": "Isabeau de Bavière",
+              "correct": false
+            },
+            {
+              "text": "Blanche de Castille",
+              "correct": false
+            },
+            {
+              "text": "Marguerite de Provence",
+              "correct": false
+            }
+          ],
+          "note_historique": "Son mariage avec Henri II, roi d’Angleterre, transfère l’Aquitaine à la couronne anglaise, aggravant les tensions qui mèneront à la guerre de Cent Ans."
+        },
+        {
+          "question": "Quel duc de Bourgogne, surnommé « le Hardi », a renforcé l’autonomie de son duché pendant la guerre de Cent Ans et fut un acteur majeur de la politique française ?",
+          "difficulty": "Difficile",
+          "reponses": [
+            {
+              "text": "Philippe le Hardi",
+              "correct": true
+            },
+            {
+              "text": "Jean sans Peur",
+              "correct": false
+            },
+            {
+              "text": "Philippe le Bon",
+              "correct": false
+            },
+            {
+              "text": "Charles le Téméraire",
+              "correct": false
+            }
+          ],
+          "note_historique": "Fils du roi de France Jean II le Bon, Philippe le Hardi (1363-1404) fut le premier grand duc Valois de Bourgogne, fondant une puissance rivale à la couronne."
+        },
+        {
+          "question": "Quel chevalier français, principal chef de la première croisade, fut Avoué du Saint-Sépulcre après la prise de Jérusalem en 1099 ?",
+          "difficulty": "Très Difficile",
+          "reponses": [
+            {
+              "text": "Godefroy de Bouillon",
+              "correct": true
+            },
+            {
+              "text": "Hugues de Payns",
+              "correct": false
+            },
+            {
+              "text": "Baudouin IV de Jérusalem",
+              "correct": false
+            },
+            {
+              "text": "Raymond de Saint-Gilles",
+              "correct": false
+            }
+          ],
+          "note_historique": "Godefroy de Bouillon (v. 1060-1100) refusa d’être couronné roi de Jérusalem, préférant le titre d’Avoué (protecteur) du Saint-Sépulcre."
+        }
+      ]
+    },
+    {
+      "titre": "La Science en France",
+      "id": 999888777, 
+      "categorie": "Science",
+      "img": "https://www2.hao.ucar.edu/sites/default/files/styles/extra_large/public/2022-01/PierreSimonMarquisdeLaplace.jpg?itok=bkpq04Xx",
+      "difficulty": "Moyen",
+      "ELO": 1500,
+      "questions": [
+        {
+          "question": "Quel chimiste français, auteur du Traité élémentaire de chimie en 1789, est considéré comme le « père de la chimie moderne » ?",
+          "difficulty": "Facile",
+          "reponses": [
+            { "text": "Antoine Lavoisier", "correct": true },
+            { "text": "Robert Boyle", "correct": false },
+            { "text": "Joseph Priestley", "correct": false },
+            { "text": "Dmitri Mendeleïev", "correct": false }
+          ],
+          "note_historique": "Antoine Lavoisier (1743–1794) a identifié et nommé l’oxygène, fondé la chimie moderne et introduit la notion de conservation de la masse."
+        },
+        {
+          "question": "Quel physicien français découvrit la radioactivité naturelle de l’uranium en 1896, ouvrant la voie aux travaux de Pierre et Marie Curie ?",
+          "difficulty": "Facile",
+          "reponses": [
+            { "text": "Henri Becquerel", "correct": true },
+            { "text": "Paul Langevin", "correct": false },
+            { "text": "Claude Bernard", "correct": false },
+            { "text": "Louis Néel", "correct": false }
+          ],
+          "note_historique": "Henri Becquerel (1852–1908) reçut le prix Nobel de physique (1903) avec Pierre et Marie Curie pour leurs découvertes sur la radioactivité."
+        },
+        {
+          "question": "Quel mathématicien et physicien français a donné son nom à l’unité internationale de mesure de l’intensité du courant électrique ?",
+          "difficulty": "Moyen",
+          "reponses": [
+            { "text": "André-Marie Ampère", "correct": true },
+            { "text": "Georg Ohm", "correct": false },
+            { "text": "James Clerk Maxwell", "correct": false },
+            { "text": "Michael Faraday", "correct": false }
+          ],
+          "note_historique": "André-Marie Ampère (1775–1836) est l’un des fondateurs de l’électromagnétisme. L’ampère (A) est l’unité de mesure du courant électrique."
+        },
+        {
+          "question": "Quelle scientifique française, double lauréate du prix Nobel (physique et chimie), a travaillé sur la radioactivité et découvert le polonium et le radium ?",
+          "difficulty": "Moyen",
+          "reponses": [
+            { "text": "Marie Curie", "correct": true },
+            { "text": "Irène Joliot-Curie", "correct": false },
+            { "text": "Rosalind Franklin", "correct": false },
+            { "text": "Lise Meitner", "correct": false }
+          ],
+          "note_historique": "Marie Curie (1867–1934) est la première femme à avoir reçu un prix Nobel et la seule à en avoir reçu deux dans deux domaines distincts."
+        },
+        {
+          "question": "Quel mathématicien et physicien français, à l’origine de la « Théorie analytique de la chaleur » (1822), a aussi légué son nom à une transformée en mathématiques ?",
+          "difficulty": "Moyen",
+          "reponses": [
+            { "text": "Joseph Fourier", "correct": true },
+            { "text": "Joseph-Louis Lagrange", "correct": false },
+            { "text": "Pierre-Simon Laplace", "correct": false },
+            { "text": "Évariste Galois", "correct": false }
+          ],
+          "note_historique": "La série de Fourier et la transformée de Fourier sont des outils fondamentaux en mathématiques appliquées et en physique."
+        },
+        {
+          "question": "Quel naturaliste français est à l’origine du concept d’héritage des caractères acquis et a proposé l’un des premiers schémas d’évolution des espèces ?",
+          "difficulty": "Difficile",
+          "reponses": [
+            { "text": "Jean-Baptiste Lamarck", "correct": true },
+            { "text": "Georges Cuvier", "correct": false },
+            { "text": "Charles Darwin", "correct": false },
+            { "text": "Alfred Russel Wallace", "correct": false }
+          ],
+          "note_historique": "Bien avant Darwin, Lamarck (1744–1829) proposa une théorie de la transformation des espèces, même si ses idées sur l’évolution diffèrent de la théorie actuelle."
+        },
+        {
+          "question": "Quel astronome et mathématicien français proposa la théorie de la nébuleuse pour expliquer la formation du système solaire ?",
+          "difficulty": "Difficile",
+          "reponses": [
+            { "text": "Pierre-Simon de Laplace", "correct": true },
+            { "text": "Giordano Bruno", "correct": false },
+            { "text": "Nicolas Copernic", "correct": false },
+            { "text": "Galilée", "correct": false }
+          ],
+          "note_historique": "Dans son 'Exposition du système du Monde' (1796), Laplace imagine que le Soleil et les planètes se sont formés à partir d’une nébuleuse primordiale."
+        },
+        {
+          "question": "Quel biologiste français, connu sous le nom de Comte de Buffon, rédigea une monumentale Histoire naturelle au XVIIIe siècle ?",
+          "difficulty": "Difficile",
+          "reponses": [
+            { "text": "Georges-Louis Leclerc de Buffon", "correct": true },
+            { "text": "Charles Bonnet", "correct": false },
+            { "text": "Michel Adanson", "correct": false },
+            { "text": "René-Antoine Ferchault de Réaumur", "correct": false }
+          ],
+          "note_historique": "Buffon (1707–1788) établit les bases de l’histoire naturelle moderne, décrivant en détail de nombreuses espèces animales et végétales."
+        },
+        {
+          "question": "Quel ingénieur et océanographe français, co-inventeur du scaphandre autonome en 1943 avec Émile Gagnan, a grandement contribué à la connaissance des océans ?",
+          "difficulty": "Très Difficile",
+          "reponses": [
+            { "text": "Jacques-Yves Cousteau", "correct": true },
+            { "text": "Auguste Piccard", "correct": false },
+            { "text": "Robert Ballard", "correct": false },
+            { "text": "Hans Hass", "correct": false }
+          ],
+          "note_historique": "Le commandant Cousteau (1910–1997) a vulgarisé l’exploration sous-marine à travers ses films et a fondé l’organisation Cousteau Society."
+        },
+        {
+          "question": "Quel mathématicien et philosophe français, auteur du 'Discours de la méthode', a également apporté d’importantes contributions à la géométrie analytique ?",
+          "difficulty": "Très Difficile",
+          "reponses": [
+            { "text": "René Descartes", "correct": true },
+            { "text": "Blaise Pascal", "correct": false },
+            { "text": "Gottfried Wilhelm Leibniz", "correct": false },
+            { "text": "Pierre de Fermat", "correct": false }
+          ],
+          "note_historique": "Descartes (1596–1650) est un pionnier de la géométrie analytique et son célèbre 'cogito ergo sum' est à la base de la philosophie moderne."
+        }
+      ]
     }
   ]
 }
