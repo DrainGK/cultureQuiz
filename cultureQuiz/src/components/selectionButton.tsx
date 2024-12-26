@@ -15,12 +15,12 @@ const SelectionButton: React.FC<SelectionButtonProps> = ({ onSelectionChange }) 
   };
 
   return (
-    <div className="w-full mt-5 flex gap-4 font-pirata">
+    <div className="w-full mt-5 flex font-pirata">
       {/* Quiz Button */}
       <button
         onClick={() => handleSelection("quiz")}
-        className={`flex items-center justify-center px-6 py-3 rounded-lg text-5xl font-bold transition-all ${
-          selected === "quiz" ? "bg-orange-500 text-white" : "bg-gray-200 text-black"
+        className={`flex items-center justify-center px-6 md:px-10 py-3 rounded-lg text-5xl font-bold transition-all ${
+          selected === "quiz" ? "bg-orange-500 text-white" : "bg-white text-black"
         }`}
       >
         Quiz 🧠
@@ -29,8 +29,8 @@ const SelectionButton: React.FC<SelectionButtonProps> = ({ onSelectionChange }) 
       {/* Duel Button */}
       <button
         onClick={() => handleSelection("duel")}
-        className={`flex items-center justify-center px-6 py-3 rounded-lg text-5xl font-bold transition-all ${
-          selected === "duel" ? "bg-orange-500 text-white" : "bg-gray-200 text-black"
+        className={`flex items-center justify-center px-6 md:px-10 py-3 rounded-lg text-5xl font-bold transition-all ${
+          selected === "duel" ? "bg-orange-500 text-white" : "bg-white text-black"
         }`}
       >
         Duel ⚔️

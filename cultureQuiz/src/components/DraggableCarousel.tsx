@@ -57,7 +57,7 @@ const DraggableCarousel: React.FC = () => {
             onMouseLeave={handleMouseUp}
             onMouseUp={handleMouseUp}
         >
-            <h2 className="text-black font-raleway font-bold text-2xl my-7 px-5">selection de la commu 🔥</h2>
+            <h2 className="text-black font-raleway font-bold text-2xl my-7 px-2 md:px-5">selection de la commu 🔥</h2>
             <div
                 ref={carouselRef}
                 className="flex gap-4 overflow-x-scroll scrollbar-hide scroll-smooth "

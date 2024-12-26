@@ -14,7 +14,6 @@ const Games: React.FC = () => {
     const [selectedQuiz, setSelectedQuiz] = useState<Quiz | null>(null);
     const [isLoading, setIsLoading] = useState<boolean>(true);
     const [error, setError] = useState<string | null>(null);
-    
 
   const handleSelectionChange = (selection: "quiz" | "duel") => {
     setCurrentSelection(selection);
@@ -65,13 +64,13 @@ const Games: React.FC = () => {
   const categories = getCategories(quizzes);
 
   return (
-    <div className="max-w-lg text-left mx-auto min-h-screen flex flex-col items-center  border-x border-orange-200">
+    <div className="max-w-lg w-full text-left mx-auto min-h-screen flex flex-col items-center  border-x border-orange-200">
       <Navbar />
       <div className="flex flex-col justify-center items-center gap-4">
         <SelectionButton onSelectionChange={handleSelectionChange} />
       </div>
       <DraggableCarousel />
-      <div className="w-full px-1 md:px-5 mb-5">
+      <div className="w-full px-2 md:px-5 mb-5">
         {/* Catégories */}
         <div className="flex gap-2 mt-7">
           {categories.map((category) => (
@@ -81,7 +80,9 @@ const Games: React.FC = () => {
           ))}
         </div>
 
-          <div className='overflow-y-auto'>
+        {/* Liste des quiz */}
+        {!selectedQuiz ? (
+          <>
             <h2 className="text-black font-raleway font-bold text-2xl my-7">Les quiz ❓</h2>
             {quizzes
               .filter((quiz) => !selectedCategory || quiz.categorie === selectedCategory) // Filtrer par catégorie
@@ -97,7 +98,10 @@ const Games: React.FC = () => {
                   />
                 </div>
               ))}
-          </div>
+          </>
+        ) : (
+          <></>
+        )}
       </div>
     </div>
   )
