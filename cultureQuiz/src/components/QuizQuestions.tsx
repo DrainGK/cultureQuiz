@@ -13,6 +13,7 @@ const QuizQuestions: React.FC<QuizQuestionsProps> = ({ quiz, onBack }) => {
   const [answered, setAnswered] = useState(false);
   // Pour savoir si la réponse choisie est correcte ou non
   const [isAnswerCorrect, setIsAnswerCorrect] = useState<boolean>(false);
+  const [selectedAnswerIndex, setSelectedAnswerIndex] = useState<number |null>(null);
 
   const endGifs = [
     "https://media.tenor.com/hz3lwhtXcUEAAAAM/rigolo-so-funny.gif",
@@ -33,8 +34,9 @@ const QuizQuestions: React.FC<QuizQuestionsProps> = ({ quiz, onBack }) => {
     setShuffledAnswers(shuffled);
   }, [currentQuestionIndex, quiz]);
 
-  const handleAnswerClick = (isCorrect: boolean) => {
+  const handleAnswerClick = (isCorrect: boolean, index:number) => {
     setAnswered(true);
+    setSelectedAnswerIndex(index);
     setIsAnswerCorrect(isCorrect);
   };
 
@@ -60,6 +62,7 @@ const QuizQuestions: React.FC<QuizQuestionsProps> = ({ quiz, onBack }) => {
     setAnswered(false);
     // On réinitialise la « bonne réponse » pour la suite
     setIsAnswerCorrect(false);
+    setSelectedAnswerIndex(null);
   };
 
   if (!quiz || !quiz.questions || quiz.questions.length === 0) {
@@ -136,8 +139,17 @@ const QuizQuestions: React.FC<QuizQuestionsProps> = ({ quiz, onBack }) => {
               shuffledAnswers.map((response, index) => (
                 <li
                   key={index}
-                  className="text-black text-2xl flex cursor-pointer rounded-2xl shadow-md bg-white hover:bg-orange-500"
-                  onClick={() => handleAnswerClick(response.correct)}
+                  className={`text-black text-2xl flex cursor-pointer rounded-2xl shadow-md
+                    ${
+                      selectedAnswerIndex === index
+                        ? isAnswerCorrect
+                          ? "bg-green-500 text-white" // Bonne réponse sélectionnée
+                          : "bg-orange-500 text-white" // Mauvaise réponse sélectionnée
+                        : answered && response.correct
+                        ? "bg-green-500 text-white" // Autres réponses correctes après sélection
+                        : "bg-white hover:bg-orange-500 hover:text-white"
+                    }`}
+                  onClick={() => handleAnswerClick(response.correct, index)}
                 >
                   <div
                     className="bg-orange-500 font-raleway flex items-center font-black text-white text-4xl py-3 px-8 rounded-2xl rounded-tr-none"
