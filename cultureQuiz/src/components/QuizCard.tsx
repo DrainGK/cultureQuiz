@@ -7,7 +7,7 @@ const QuizCard: React.FC<QuizCardProps> = ({ title, difficulty, questionsCount, 
     <Link
     to={to}
     >
-      <div className="flex w-full h-24 items-center mt-5 bg-white shadow-xl rounded-lg overflow-hidden cursor-pointer hover:shadow-2xl transition-shadow duration-300">
+      <div className="flex w-full h-24 items-center mt-5 bg-white shadow-lg shadow-black/25 rounded-lg overflow-hidden cursor-pointer hover:shadow-2xl transition-shadow duration-300">
         {/* Section Texte */}
         <div className="flex-1 p-4">
           <h2 className="text-black text-xs sm:text-md font-bold">{title}</h2>

@@ -6,6 +6,7 @@ import QuizCard from '../components/QuizCard';
 import Categories from '../components/Categories';
 import { Quiz, DuelData } from '../utils/types';
 import { slugify } from '../utils/utils';
+import Duel from './Duel';
 
 const Games: React.FC = () => {
     const [currentSelection, setCurrentSelection] = useState<"quiz" | "duel">("quiz");
@@ -63,7 +64,7 @@ const Games: React.FC = () => {
 
   const categories = getCategories(quizzes);
 
-  return (
+  return currentSelection === "quiz" ? (
     <div className="max-w-lg w-full text-left mx-auto min-h-screen flex flex-col items-center  border-x border-orange-200">
       <Navbar />
       <div className="flex flex-col justify-center items-center gap-4">
@@ -80,9 +81,7 @@ const Games: React.FC = () => {
           ))}
         </div>
 
-        {/* Liste des quiz */}
-        {!selectedQuiz ? (
-          <>
+        
             <h2 className="text-black font-raleway font-bold text-2xl my-7">Les quiz ❓</h2>
             {quizzes
               .filter((quiz) => !selectedCategory || quiz.categorie === selectedCategory) // Filtrer par catégorie
@@ -98,13 +97,18 @@ const Games: React.FC = () => {
                   />
                 </div>
               ))}
-          </>
-        ) : (
-          <></>
-        )}
       </div>
     </div>
+  ) : (
+    <div className="max-w-lg w-full text-left mx-auto min-h-screen flex flex-col items-center  border-x border-orange-200">
+       <Navbar />
+      <div className="flex flex-col justify-center items-center gap-4">
+        <SelectionButton onSelectionChange={handleSelectionChange} />
+      </div>
+      <Duel/>
+    </div>
   )
+  
 }
 
 export default Games

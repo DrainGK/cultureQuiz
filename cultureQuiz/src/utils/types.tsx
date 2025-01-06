@@ -20,11 +20,6 @@ export interface QuizQuestionsProps {
     onBack: () => void;
 }
 
-export interface DuelData {
-    id: number;
-    name: string;
-    elements: string[];
-  }
 
 export interface QuizCardProps {
     title: string; // Titre du quiz
@@ -33,5 +28,21 @@ export interface QuizCardProps {
     questionsCount: number; // Nombre de questions
     img: string; // URL de l'image associée
     to: string;
+}
+
+export interface DuelData {
+    titre: string;
+    id: number;
+    categorie: string;
+    img: string;
+    difficulty: string;
+    ELO: number;
+    player: Player[];
   }
+
+export type Player = {
+    name: string;
+    elo: number;
+    img: string;
+}
   

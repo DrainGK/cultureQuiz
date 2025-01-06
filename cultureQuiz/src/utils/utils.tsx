@@ -1,3 +1,5 @@
+import { Player } from "./types";
+
 export function slugify(input: string): string {
     return input
       .toLowerCase()            // 1. Tout en minuscules
@@ -17,3 +19,20 @@ export function shuffleArray<T>(arr: T[]): T[] {
     return copy;
   }
   
+export function calculateProbability(eloA: number, eloB: number):number {
+  return 1/(1 + Math.pow(10, (eloB - eloA)/400))
+}
+
+export function updateEloForBoth(
+  winner: Player,
+  loser: Player,
+  K: number = 32
+): void {
+  // Calcul des probabilités pour chaque joueur
+  const probWinner = calculateProbability(winner.elo, loser.elo);
+  const probLoser = calculateProbability(loser.elo, winner.elo);
+
+  // Met à jour les scores ELO
+  winner.elo = Math.round(winner.elo + K * (1 - probWinner)); // Résultat 1 pour le gagnant
+  loser.elo = Math.round(loser.elo + K * (0 - probLoser));    // Résultat 0 pour le perdant
+}

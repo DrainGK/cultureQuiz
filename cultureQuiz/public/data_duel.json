@@ -1,0 +1,304 @@
+{
+    "duels":[
+        {
+            "titre": "Les Grands Stratèges et Rois de France",
+            "id": 87387684989,
+            "categorie": "Histoire",
+            "img": "https://upload.wikimedia.org/wikipedia/commons/1/16/Henry_IV_of_france_by_pourbous_younger.jpg",
+            "difficulty": "Moyenne",
+            "ELO": 1500,
+            "player": [
+              {
+                "name": "Philippe Auguste",
+                "img": "https://institut-iliade.com/wp-content/uploads/2021/10/philippe-auguste-portrait.jpg",
+                "elo": 1500
+              },
+              {
+                "name": "Henri IV",
+                "img": "https://upload.wikimedia.org/wikipedia/commons/1/16/Henry_IV_of_france_by_pourbous_younger.jpg",
+                "elo": 1500
+              },
+              {
+                "name": "Charles VII",
+                "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/KarlVII.jpg/640px-KarlVII.jpg",
+                "elo": 1500
+              },
+              {
+                "name": "Anne de Bretagne",
+                "img": "https://en.muzeo.com/sites/default/files/styles/image_basse_def/public/oeuvres/paintings/classical/anne_de_bretagne_reine_de_fra68417.jpg?itok=tshPG8_o",
+                "elo": 1500
+              },
+              {
+                "name": "Louis IX (Saint Louis)",
+                "img": "https://laportelatine.org/wp-content/uploads/2021/02/Signol-Emile-001.jpg",
+                "elo": 1500
+              },
+              {
+                "name": "François Ier",
+                "img": "https://www.revuedesdeuxmondes.fr/wp-content/uploads/2017/09/1.1-francois-1er-roi-de-france-e1505208711882.jpg",
+                "elo": 1500
+              },
+              {
+                "name": "Henri II",
+                "img": "https://europeanroyalhistory.wordpress.com/wp-content/uploads/2020/07/cc2650a4-2967-4da3-a724-65d4dc6ff928.jpeg?w=584",
+                "elo": 1500
+              },
+              {
+                "name": "Louis XIII",
+                "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Luis_XIII%2C_rey_de_Francia_%28Philippe_de_Champaigne%29.jpg/1200px-Luis_XIII%2C_rey_de_Francia_%28Philippe_de_Champaigne%29.jpg",
+                "elo": 1500
+              },
+              {
+                "name": "Catherine de Médicis",
+                "img": "https://static.wikia.nocookie.net/reign-cw/images/4/43/Katharina18.jpg/revision/latest/thumbnail/width/360/height/360?cb=20151221054319",
+                "elo": 1500
+              },
+              {
+                "name": "Duguesclin",
+                "img": "https://www.meisterdrucke.uk/kunstwerke/1260px/French_School_-_Bertrand_du_Guesclin_%28Duguesclin%29_%28v_1320-1380%29_Constable_of_France_-_%28MeisterDrucke-952441%29.jpg",
+                "elo": 1500
+              }
+            ]
+          },
+          {
+            "titre": "Les Grandes Batailles de France",
+            "id": 87387684990,
+            "categorie": "Histoire",
+            "img": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Bataille_de_Bouvines_gagnee_par_Philippe_Auguste.jpg",
+            "difficulty": "Difficile",
+            "ELO": 1600,
+            "duel": [
+              {
+                "name": "Bataille de Bouvines (1214)",
+                "img": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Bataille_de_Bouvines_gagnee_par_Philippe_Auguste.jpg",
+                "elo": 1600
+              },
+              {
+                "name": "Bataille d'Azincourt (1415)",
+                "img": "https://cdn.futura-sciences.com/sources/images/Azincourt%20roi%20Henry%20V%20au%20combat.jpg",
+                "elo": 1600
+              },
+              {
+                "name": "Bataille de Marignan (1515)",
+                "img": "https://historyweb.fr/wp-content/uploads/2015/09/bataille-marignan-histoire-historyweb-1024x520.jpg",
+                "elo": 1600
+              },
+              {
+                "name": "Bataille de Valmy (1792)",
+                "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Valmy_Battle_painting.jpg/1200px-Valmy_Battle_painting.jpg",
+                "elo": 1600
+              },
+              {
+                "name": "Bataille d'Austerlitz (1805)",
+                "img": "https://upload.wikimedia.org/wikipedia/commons/b/ba/La_bataille_d%27Austerlitz._2_decembre_1805_%28Fran%C3%A7ois_G%C3%A9rard%29.jpg",
+                "elo": 1600
+              },
+              {
+                "name": "Bataille de Verdun (1916)",
+                "img": "https://5livres.fr/wp-content/uploads/2019/10/Les-5-meilleurs-livres-sur-la-bataille-de-Verdun.jpg",
+                "elo": 1600
+              },
+              {
+                "name": "Bataille de Poitiers (732)",
+                "img": "https://en.muzeo.com/sites/default/files/styles/image_facebook_repro/public/oeuvres/paintings/classical/bataille_de_poitiers_octobre_103800.jpg?itok=GIo7gPXX",
+                "elo": 1600
+              },
+              {
+                "name": "Bataille de Castillon (1453)",
+                "img": "https://medias.leresistant.fr/photos/1200/5491/",
+                "elo": 1600
+              },
+              {
+                "name": "Bataille de la Somme (1916)",
+                "img": "https://www.herodote.net/_images/somme.jpg",
+                "elo": 1600
+              },
+              {
+                "name": "Bataille de Denain (1712)",
+                "img": "https://theatrum-belli.com/wp-content/uploads/2020/07/Denain-1712-2.jpg",
+                "elo": 1600
+              }
+            ]
+          },
+          {
+            "titre": "Les Meilleurs Alcools Français",
+            "id": 87387684992,
+            "categorie": "Art de Vivre",
+            "img": "https://demichellot.com/img/cms/Liqueur%20-%20%20De%20Michellot%20sur%20serviette%20a%CC%80%20carreau%20rouge-2.webp",
+            "difficulty": "Moyenne",
+            "ELO": 1550,
+            "duel": [
+              {
+                "name": "Champagne",
+                "img": "https://premiumbottles.dk/cdn/shop/articles/guiden-til-hvilken-champagne-du-bor-vaelge-935095.jpg?v=1691228756",
+                "elo": 1550
+              },
+              {
+                "name": "Cognac",
+                "img": "https://mscwordpresscontent.s3.amazonaws.com/wa/wp-content/uploads/2018/01/cognac_1600.jpg",
+                "elo": 1550
+              },
+              {
+                "name": "Armagnac",
+                "img": "https://upload.wikimedia.org/wikipedia/commons/3/35/Armagnac-img_0465.jpg",
+                "elo": 1550
+              },
+              {
+                "name": "Calvados",
+                "img": "https://upload.wikimedia.org/wikipedia/commons/4/41/Couperne_Calvados.jpg",
+                "elo": 1550
+              },
+              {
+                "name": "Pastis",
+                "img": "https://streetbar.fr/cdn/shop/products/PASTIS51.jpg?v=1620376444",
+                "elo": 1550
+              },
+              {
+                "name": "Vin rouge",
+                "img": "https://vignobles.net/wp-content/uploads/2020/12/vin-Bordeaux-millesime.jpg",
+                "elo": 1550
+              },
+              {
+                "name": "Génépi",
+                "img": "https://cdn.prod2.whisky.fr/media/catalog/product/cache/0612b5456ea4ae739d4a0b09fbec77a2/6/4/64607_6_m.jpgd859e_26_1.jpg",
+                "elo": 1550
+              },
+              {
+                "name": "Verveine",
+                "img": "https://demichellot.com/img/p/1/5/5/155.jpg",
+                "elo": 1550
+              },
+              {
+                "name": "Gentiane",
+                "img": "https://www.drrhumantique.fr/media/images/catalog/article/42/big/14.jpg",
+                "elo": 1550
+              },
+              {
+                "name": "Pineau des Charentes",
+                "img": "https://www.traveldistilled.com/wp-content/uploads/2021/01/Pineau_des_Charentes_Vieux.jpg",
+                "elo": 1550
+              }
+            ]
+          },
+          {
+            "titre": "Les Plus Belles Cathédrales de France",
+            "id": 87387684993,
+            "categorie": "Architecture",
+            "img": "https://cdn.britannica.com/35/155335-050-D0C61BB7/Notre-Dame-de-Paris-France.jpg",
+            "difficulty": "Difficile",
+            "ELO": 1600,
+            "duel": [
+              {
+                "name": "Cathédrale Notre-Dame de Paris",
+                "img": "https://cdn.britannica.com/35/155335-050-D0C61BB7/Notre-Dame-de-Paris-France.jpg",
+                "elo": 1600
+              },
+              {
+                "name": "Cathédrale Notre-Dame de Chartres",
+                "img": "https://frcitadelle.fr/cdn/shop/articles/cathedrale-chartres-photo.jpg?v=1717343895",
+                "elo": 1600
+              },
+              {
+                "name": "Cathédrale Saint-Étienne de Bourges",
+                "img": "https://images.ctfassets.net/43cg184ejz07/6ceMubSXM7M6x7djN3sUx8/057e71c0f9a38e89265842541c636035/Cathedrale_Saint-Etienne__Bourges__16-09-2006.jpg?w=1200&h=630&fit=fill&q=70",
+                "elo": 1600
+              },
+              {
+                "name": "Cathédrale Notre-Dame de Reims",
+                "img": "https://catholique-reims.fr/wp-content/uploads/2021/04/cathedrale-nd-reims-avant.png",
+                "elo": 1600
+              },
+              {
+                "name": "Cathédrale Saint-Pierre de Beauvais",
+                "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYODlQJnOUEevwC6Nn1WBAD5q3COyO6uJskg&s",
+                "elo": 1600
+              },
+              {
+                "name": "Cathédrale Sainte-Cécile d'Albi",
+                "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQkZgFPzBMyo8L8iwypqCJpdTLvyzljaQtzw&s",
+                "elo": 1600
+              },
+              {
+                "name": "Cathédrale Notre-Dame de Strasbourg",
+                "img": "https://apps.tourisme-alsace.info/photos/strasbourg/photos/223007269_13.jpg",
+                "elo": 1600
+              },
+              {
+                "name": "Cathédrale Saint-Jean de Lyon",
+                "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTigwfOrPE7UMQXuRUOaAtRf9Iw6JUkdfaPuQ&s",
+                "elo": 1600
+              },
+              {
+                "name": "Cathédrale Saint-Michel de Carcassonne",
+                "img": "https://cdt11.media.tourinsoft.eu/upload/Cathedrale-Saint-Michel--Sebastien-Carles--1-.jpg",
+                "elo": 1600
+              },
+              {
+                "name": "Cathédrale Saint-Sernin de Toulouse",
+                "img": "https://basilique-saint-sernin.fr/wp-content/uploads/2022/10/IMG_0251-scaled.jpg",
+                "elo": 1600
+              }
+            ]
+          },
+          {
+            "titre": "Les Meilleurs Poètes Français",
+            "id": 87387684994,
+            "categorie": "Littérature",
+            "img": "",
+            "difficulty": "Moyenne",
+            "ELO": 1550,
+            "duel": [
+              {
+                "name": "Charles Baudelaire",
+                "img": "https://cdn.britannica.com/12/29712-050-D2404533/Charles-Baudelaire-photograph-Etienne-Carjat-1863.jpg",
+                "elo": 1550
+              },
+              {
+                "name": "Victor Hugo",
+                "img": "https://hips.hearstapps.com/hmg-prod/images/gettyimages-89861094.jpg",
+                "elo": 1550
+              },
+              {
+                "name": "Arthur Rimbaud",
+                "img": "https://poemanalysis.com/wp-content/uploads/2019/04/Arthur-Rimbaud-Portrait.jpg",
+                "elo": 1550
+              },
+              {
+                "name": "Paul Verlaine",
+                "img": "https://poemanalysis.com/wp-content/uploads/2018/12/Paul-Verlaine-Portrait.jpg",
+                "elo": 1550
+              },
+              {
+                "name": "Stéphane Mallarmé",
+                "img": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Portrait_of_St%C3%A9phane_Mallarm%C3%A9.jpg",
+                "elo": 1550
+              },
+              {
+                "name": "Guillaume Apollinaire",
+                "img": "https://cdn.thecollector.com/wp-content/uploads/2022/08/guillaume-apollinaire-portrait.jpg",
+                "elo": 1550
+              },
+              {
+                "name": "Alfred de Musset",
+                "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEiESNU5T7HFnI7fdCJJ6PqLc3F0MgrIJpYg&s",
+                "elo": 1550
+              },
+              {
+                "name": "Paul Éluard",
+                "img": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Eluard_Harcourt_1945.jpg",
+                "elo": 1550
+              },
+              {
+                "name": "Jean de La Fontaine",
+                "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIDZNOgCUoAZR1QyX8Yktirp42Nqa1SPBQYg&s",
+                "elo": 1550
+              },
+              {
+                "name": "René Char",
+                "img": "https://i0.wp.com/blogs.princeton.edu/manuscripts/wp-content/uploads/sites/7/2018/04/Char-as-Capitaine-Alexandre-Courtesy-of-Marie-Claude-Char.jpg?ssl=1",
+                "elo": 1550
+              }
+            ]
+          }
+    ]
+}
