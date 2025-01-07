@@ -139,7 +139,7 @@ const QuizQuestions: React.FC<QuizQuestionsProps> = ({ quiz, onBack }) => {
               shuffledAnswers.map((response, index) => (
                 <li
                   key={index}
-                  className={`text-black text-2xl flex cursor-pointer rounded-2xl shadow-md
+                  className={`text-black text-2xl flex cursor-pointer rounded-2xl shadow-lg shadow-black/25
                     ${
                       selectedAnswerIndex === index
                         ? isAnswerCorrect

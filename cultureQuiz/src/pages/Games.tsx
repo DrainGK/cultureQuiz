@@ -65,38 +65,39 @@ const Games: React.FC = () => {
   const categories = getCategories(quizzes);
 
   return currentSelection === "quiz" ? (
-    <div className="max-w-lg w-full text-left mx-auto min-h-screen flex flex-col items-center  border-x border-orange-200">
-      <Navbar />
-      <div className="flex flex-col justify-center items-center gap-4">
-        <SelectionButton onSelectionChange={handleSelectionChange} />
-      </div>
-      <DraggableCarousel />
-      <div className="w-full px-2 md:px-5 mb-5">
-        {/* Catégories */}
-        <div className="flex gap-2 mt-7">
-          {categories.map((category) => (
-            <div key={category} onClick={() => handleCategoryClick(category)}>
-              <Categories category={category} selected={category === selectedCategory} />
-            </div>
-          ))}
+      <div className="overflow-hidden h-screen max-w-lg w-full text-left mx-auto flex flex-col items-center  border-x border-orange-200">
+        <Navbar />
+        <div className="flex flex-col justify-center items-center gap-4">
+          <SelectionButton onSelectionChange={handleSelectionChange} />
         </div>
+        <DraggableCarousel />
+        <div className="w-full h-2/5 px-2 md:px-5 mb-5">
+          {/* Catégories */}
+          <div className="flex gap-2 mt-7">
+            {categories.map((category) => (
+              <div key={category} onClick={() => handleCategoryClick(category)}>
+                <Categories category={category} selected={category === selectedCategory} />
+              </div>
+            ))}
+          </div>
 
-        
-            <h2 className="text-black font-raleway font-bold text-2xl my-7">Les quiz ❓</h2>
-            {quizzes
-              .filter((quiz) => !selectedCategory || quiz.categorie === selectedCategory) // Filtrer par catégorie
-              .map((quiz) => (
-                <div key={quiz.id} onClick={() => handleQuizClick(quiz)}>
-                  <QuizCard
-                    title ={quiz.titre}
-                    category={quiz.categorie}
-                    difficulty={quiz.difficulty}
-                    img={quiz.img}
-                    questionsCount={quiz.questions.length}
-                    to={`/quiz/${slugify(quiz.titre)}-${quiz.id}`}
-                  />
-                </div>
-              ))}
+          <h2 className="text-black font-raleway font-bold text-2xl my-7">Les quiz ❓</h2>
+          <div className='h-3/4 xl:h-[90%] overflow-y-scroll no-scrollbar'>
+                {quizzes
+                  .filter((quiz) => !selectedCategory || quiz.categorie === selectedCategory) // Filtrer par catégorie
+                  .map((quiz) => (
+                    <div key={quiz.id} onClick={() => handleQuizClick(quiz)}>
+                      <QuizCard
+                        title ={quiz.titre}
+                        category={quiz.categorie}
+                        difficulty={quiz.difficulty}
+                        img={quiz.img}
+                        questionsCount={quiz.questions.length}
+                        to={`/quiz/${slugify(quiz.titre)}-${quiz.id}`}
+                      />
+                    </div>
+                  ))}
+          </div>
       </div>
     </div>
   ) : (
