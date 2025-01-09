@@ -2,6 +2,7 @@ import { Route, Routes } from 'react-router-dom'
 import './App.css'
 import Games from './pages/Games'
 import Quiz from './pages/Quiz'
+import Duel from './pages/Duel'
 
 function App() {
 
@@ -11,6 +12,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Games />}/>
         <Route path="/quiz/:slugAndId" element={<Quiz/>}/>
+        <Route path="/duel/:slugAndId" element={<Duel/>}/>
       </Routes>
       
     </div>

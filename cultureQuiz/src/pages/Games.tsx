@@ -6,12 +6,11 @@ import QuizCard from '../components/QuizCard';
 import Categories from '../components/Categories';
 import { Quiz, DuelData } from '../utils/types';
 import { slugify } from '../utils/utils';
-import Duel from './Duel';
 
 const Games: React.FC = () => {
     const [currentSelection, setCurrentSelection] = useState<"quiz" | "duel">("quiz");
     const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
-    const [quizzes, setQuizzes] = useState<Quiz[]>([]);
+    const [dataElement, setDataElement] = useState<Quiz[]>([]);
     const [selectedQuiz, setSelectedQuiz] = useState<Quiz | null>(null);
     const [isLoading, setIsLoading] = useState<boolean>(true);
     const [error, setError] = useState<string | null>(null);
@@ -37,13 +36,19 @@ const Games: React.FC = () => {
 
   useEffect(() => {
     const fetchData = async () => {
+      
+      const endPoint = currentSelection === "quiz"? "/data_quiz.json" : "/data_duel.json";
       try{
-        const response = await fetch("/data_quiz.json");
+        const response = await fetch(endPoint);
         if (!response.ok){
           throw new Error("Erreur lors de la recuperation des donnees");
         }
         const data = await response.json();
-        setQuizzes(data.quizzes)
+        if (currentSelection === "quiz") {
+          setDataElement(data.quizzes || []); // Charger les données pour les quiz
+        } else {
+          setDataElement(data.duels || []); // Charger les données pour les duels
+        }
       } catch (err){
         setError((err as Error).message);
       } finally {
@@ -52,7 +57,7 @@ const Games: React.FC = () => {
     };
 
     fetchData();
-  }, [])
+  }, [currentSelection])
   
   if (isLoading) return <p className="text-center">Chargement des données...</p>;
   if (error) return <p className="text-red-500 text-center">{error}</p>;
@@ -62,9 +67,9 @@ const Games: React.FC = () => {
     return [...new Set(quizzes.map((quiz) => quiz.categorie))];
   }
 
-  const categories = getCategories(quizzes);
+  const categories = getCategories(dataElement);
 
-  return currentSelection === "quiz" ? (
+  return (
       <div className="overflow-hidden h-screen max-w-lg w-full text-left mx-auto flex flex-col items-center  border-x border-orange-200">
         <Navbar />
         <div className="flex flex-col justify-center items-center gap-4">
@@ -81,35 +86,26 @@ const Games: React.FC = () => {
             ))}
           </div>
 
-          <h2 className="text-black font-raleway font-bold text-2xl my-7">Les quiz ❓</h2>
+          <h2 className="text-black font-raleway font-bold text-2xl mt-7 mb-3">{currentSelection === "quiz"? "Les quizzes ❓" : "Les duels 💥"}</h2>
           <div className='h-3/4 xl:h-[90%] overflow-y-scroll no-scrollbar'>
-                {quizzes
-                  .filter((quiz) => !selectedCategory || quiz.categorie === selectedCategory) // Filtrer par catégorie
-                  .map((quiz) => (
-                    <div key={quiz.id} onClick={() => handleQuizClick(quiz)}>
+                {dataElement
+                  .filter((data) => !selectedCategory || data.categorie === selectedCategory) // Filtrer par catégorie
+                  .map((data) => (
+                    <div key={data.id} onClick={() => handleQuizClick(data)}>
                       <QuizCard
-                        title ={quiz.titre}
-                        category={quiz.categorie}
-                        difficulty={quiz.difficulty}
-                        img={quiz.img}
-                        questionsCount={quiz.questions.length}
-                        to={`/quiz/${slugify(quiz.titre)}-${quiz.id}`}
+                        title ={data.titre}
+                        category={data.categorie}
+                        difficulty={data.difficulty}
+                        img={data.img}
+                        questionsCount={data.questions?.length}
+                        to={`/${currentSelection}/${slugify(data.titre)}-${data.id}`}
                       />
                     </div>
                   ))}
           </div>
       </div>
     </div>
-  ) : (
-    <div className="max-w-lg w-full text-left mx-auto min-h-screen flex flex-col items-center  border-x border-orange-200">
-       <Navbar />
-      <div className="flex flex-col justify-center items-center gap-4">
-        <SelectionButton onSelectionChange={handleSelectionChange} />
-      </div>
-      <Duel/>
-    </div>
   )
-  
 }
 
 export default Games
