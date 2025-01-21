@@ -11,13 +11,10 @@ const Quiz: React.FC = () => {
   const [error, setError] = useState<string | null>(null);
 
   let quizId = null;
-  let slug = "";
 
   if (slugAndId) {
     const parts = slugAndId.split("-");
     quizId = parts[parts.length - 1]; // dernier élément (e.g. "42")
-    // on peut reconstruire le slug complet sans l'ID si on veut
-    slug = parts.slice(0, parts.length - 1).join("-");
   }
 
   useEffect(() => {
