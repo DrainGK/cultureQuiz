@@ -15,8 +15,8 @@ const Duel: React.FC = () => {
     
 
     let duelId = null;
-    let slug = "";
     if (slugAndId) {
+        let slug = "";
         const parts = slugAndId.split("-");
         duelId = parts[parts.length - 1]; // dernier élément (e.g. "42")
         // on peut reconstruire le slug complet sans l'ID si on veut

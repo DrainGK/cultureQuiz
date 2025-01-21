@@ -4,14 +4,13 @@ import SelectionButton from '../components/selectionButton';
 import DraggableCarousel from '../components/DraggableCarousel';
 import QuizCard from '../components/QuizCard';
 import Categories from '../components/Categories';
-import { Quiz, DuelData } from '../utils/types';
+import { Quiz} from '../utils/types';
 import { slugify } from '../utils/utils';
 
 const Games: React.FC = () => {
     const [currentSelection, setCurrentSelection] = useState<"quiz" | "duel">("quiz");
     const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
     const [dataElement, setDataElement] = useState<Quiz[]>([]);
-    const [selectedQuiz, setSelectedQuiz] = useState<Quiz | null>(null);
     const [isLoading, setIsLoading] = useState<boolean>(true);
     const [error, setError] = useState<string | null>(null);
 
@@ -29,10 +28,6 @@ const Games: React.FC = () => {
     }
     
   }
-
-  const handleQuizClick = (quiz: Quiz) => {
-    setSelectedQuiz(quiz); 
-  };
 
   useEffect(() => {
     const fetchData = async () => {
@@ -91,7 +86,7 @@ const Games: React.FC = () => {
                 {dataElement
                   .filter((data) => !selectedCategory || data.categorie === selectedCategory) // Filtrer par catégorie
                   .map((data) => (
-                    <div key={data.id} onClick={() => handleQuizClick(data)}>
+                    <div key={data.id}>
                       <QuizCard
                         title ={data.titre}
                         category={data.categorie}
