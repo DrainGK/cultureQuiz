@@ -24,34 +24,37 @@ const Duel: React.FC = () => {
     }
 
     useEffect(() => {
-        const fetchDuel = async ()=> {
-            try{
-                const response = await fetch("/data_duel.json");
-                if (!response.ok){
-                    throw new Error("Erreur lors de la recuperation des donnees");
-                }
-
-                const data = await response.json();
-                const foundDuel = data.duels.find(
-                    (duel: DuelData) => duel.id === parseInt(duelId ?? "", 10)
-                );
-
-                if(!foundDuel){
-                    throw new Error("Duel introuvable")
-                };
-                setDuel(data.duels[0]);
-                console.log(data.duels[0]);
-                setPlayerArray(data.duels[0].player);
-               
-            } catch(err){
-                setError((err as Error).message);
-            } finally {
-                setIsLoading(false);
+        const fetchDuel = async () => {
+          try {
+            const response = await fetch("/data_duel.json");
+            if (!response.ok) {
+              throw new Error("Erreur lors de la récupération des données");
             }
-        }
-        
+      
+            const data = await response.json();
+            console.log("Données JSON récupérées :", data);
+      
+            const foundDuel = data.duels.find(
+              (duel: DuelData) => duel.id === parseInt(duelId ?? "", 10)
+            );
+      
+            if (!foundDuel) {
+              throw new Error("Duel introuvable.");
+            }
+      
+            console.log("Duel trouvé :", foundDuel);
+            setDuel(foundDuel);
+            setPlayerArray(foundDuel.player); // Initialisation du tableau des joueurs
+          } catch (err) {
+            console.error("Erreur :", err);
+            setError((err as Error).message);
+          } finally {
+            setIsLoading(false);
+          }
+        };
+      
         fetchDuel();
-    },[duelId])
+      }, [duelId]);
 
     const startDuel = (winner: Player, loser: Player) => {
         console.log(maxTurn);

@@ -67,7 +67,7 @@
             "img": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Bataille_de_Bouvines_gagnee_par_Philippe_Auguste.jpg",
             "difficulty": "Difficile",
             "ELO": 1600,
-            "duel": [
+            "player": [
               {
                 "name": "Bataille de Bouvines (1214)",
                 "img": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Bataille_de_Bouvines_gagnee_par_Philippe_Auguste.jpg",
@@ -127,7 +127,7 @@
             "img": "https://demichellot.com/img/cms/Liqueur%20-%20%20De%20Michellot%20sur%20serviette%20a%CC%80%20carreau%20rouge-2.webp",
             "difficulty": "Moyenne",
             "ELO": 1550,
-            "duel": [
+            "player": [
               {
                 "name": "Champagne",
                 "img": "https://premiumbottles.dk/cdn/shop/articles/guiden-til-hvilken-champagne-du-bor-vaelge-935095.jpg?v=1691228756",
@@ -187,7 +187,7 @@
             "img": "https://cdn.britannica.com/35/155335-050-D0C61BB7/Notre-Dame-de-Paris-France.jpg",
             "difficulty": "Difficile",
             "ELO": 1600,
-            "duel": [
+            "player": [
               {
                 "name": "Cathédrale Notre-Dame de Paris",
                 "img": "https://cdn.britannica.com/35/155335-050-D0C61BB7/Notre-Dame-de-Paris-France.jpg",
@@ -247,7 +247,7 @@
             "img": "https://poemanalysis.com/wp-content/uploads/2018/12/Paul-Verlaine-Portrait.jpg",
             "difficulty": "Moyenne",
             "ELO": 1550,
-            "duel": [
+            "player": [
               {
                 "name": "Charles Baudelaire",
                 "img": "https://cdn.britannica.com/12/29712-050-D2404533/Charles-Baudelaire-photograph-Etienne-Carjat-1863.jpg",
