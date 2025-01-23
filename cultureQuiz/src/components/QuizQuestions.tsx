@@ -7,6 +7,7 @@ const QuizQuestions: React.FC<QuizQuestionsProps> = ({ quiz, onBack }) => {
   const [score, setScore] = useState(0);
   const [progress, setProgress] = useState(1);
   const [showScore, setShowScore] = useState(false);
+  const [isDisable, setIsDisable] = useState(false);
   
 
   // Pour savoir si l'utilisateur a déjà répondu
@@ -35,6 +36,7 @@ const QuizQuestions: React.FC<QuizQuestionsProps> = ({ quiz, onBack }) => {
   }, [currentQuestionIndex, quiz]);
 
   const handleAnswerClick = (isCorrect: boolean, index:number) => {
+    setIsDisable(true);
     setAnswered(true);
     setSelectedAnswerIndex(index);
     setIsAnswerCorrect(isCorrect);
@@ -62,8 +64,16 @@ const QuizQuestions: React.FC<QuizQuestionsProps> = ({ quiz, onBack }) => {
     setAnswered(false);
     // On réinitialise la « bonne réponse » pour la suite
     setIsAnswerCorrect(false);
+    setIsDisable(false);
     setSelectedAnswerIndex(null);
   };
+
+  const resetQuiz = () =>{
+    setProgress(1);
+    setCurrentQuestionIndex(0);
+    setScore(0);
+    setShowScore(false);
+  }
 
   if (!quiz || !quiz.questions || quiz.questions.length === 0) {
     return <p>Aucune question disponible pour ce quiz.</p>;
@@ -91,7 +101,7 @@ const QuizQuestions: React.FC<QuizQuestionsProps> = ({ quiz, onBack }) => {
           <img className="w-full rounded-3xl" src={endGif()} alt="score gif" />
           <div className="w-full flex flex-col gap-y-4 font-raleway text-xl">
             <button
-              onClick={() => window.location.reload()}
+              onClick={() => resetQuiz()}
               className="text-white w-full bg-orange-500 py-6 rounded-2xl"
             >
               Encore une fois?
@@ -149,7 +159,7 @@ const QuizQuestions: React.FC<QuizQuestionsProps> = ({ quiz, onBack }) => {
                         ? "bg-green-500 text-white" // Autres réponses correctes après sélection
                         : "bg-white hover:bg-orange-500 hover:text-white"
                     }`}
-                  onClick={() => handleAnswerClick(response.correct, index)}
+                  onClick={() => isDisable ? undefined : handleAnswerClick(response.correct, index)}
                 >
                   <div
                     className="bg-orange-500 font-raleway flex items-center font-black text-white text-4xl py-3 px-8 rounded-2xl rounded-tr-none"

@@ -68,6 +68,10 @@ const Duel: React.FC = () => {
         } 
     }
 
+    const resetDuel= ()=>{
+      setMaxTurn(1)
+    }
+
     const findHighestElo = (players: Player[]): Player | null => {
         const maxElo = Math.max(...players.map(player => player.elo));
         return players.find(player => player.elo === maxElo) || null;
@@ -137,7 +141,7 @@ const Duel: React.FC = () => {
         <p className='w-full font-raleway font-bold text-xl'>🔥 {topPlayer?.name}</p>
         <img className='w-full h-[272px] mb-5 rounded-xl object-cover object-top' src={topPlayer?.img} alt={topPlayer?.name} />
         <button
-              onClick={() => window.location.reload()}
+              onClick={() => resetDuel()}
               className="text-white w-full bg-orange-500 py-6 rounded-2xl"
             >
               Encore une fois?
